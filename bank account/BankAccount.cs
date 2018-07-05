@@ -5,16 +5,16 @@ using System.Linq;
 
 namespace bank_account
 {
-    public abstract class BankAccount
+    public class BankAccount
     {
-        private string _accountName;
+        private string AccountName;
         public static int AccountNumbersetter = 1000;
         public int AccountNumber;
         public double Balance;
         private Queue<Transaction> Ledger;
         public BankAccount(string accountName, double balance)
         {
-            _accountName = accountName;
+            AccountName = accountName;
             Balance = balance;
         }
 
